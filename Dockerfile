@@ -1,0 +1,7 @@
+FROM python:3.12-slim
+ENV PYTHONUNBUFFERED=1
+ENV PORT=8080
+WORKDIR /app
+COPY . .
+EXPOSE 8080
+CMD ["python3", "server.py"]
